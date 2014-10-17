@@ -3,9 +3,9 @@
 //  Also makes new friends and prunes its followings.
 //
 var Bot = require('./examples/bot.js'),
-  config1 = require('./config.js');
+  config = process.env;
 
-var bot = new Bot(config1);
+var bot = new Bot(config);
 
 console.log('Engaging nitrous twitterous boost!');
 
